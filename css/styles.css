@@ -51,13 +51,16 @@ li {
   color: #404bbf;
 }
 
+.contacts {
+  font-style: normal;
+}
+
 .contacts__item {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  font-style: normal;
 }
 
 .contacts__item:hover {
@@ -78,9 +81,10 @@ li {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: #fff;
+  text-align: center;
 }
 
-.btn__order {
+.btn__ordr {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -90,11 +94,11 @@ li {
   cursor: pointer;
 }
 
-.btn__order:hover {
+.btn__ordr:hover {
   background-color: #404bbf;
 }
 
-.btn__order:focus {
+.btn__ordr:focus {
   background-color: #404bbf;
 }
 
@@ -125,7 +129,12 @@ li {
 }
 
 .team-name {
-  line-height: 1.11;
+  font-weight: 500;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   text-align: center;
   text-transform: capitalize;
 }
@@ -177,7 +186,7 @@ li {
   background-color: #2e2f42;
 }
 
-.ootfer-text {
+.footfer-text {
   font-size: 16px;
   line-height: 1.5;
   color: #f4f4fd;
