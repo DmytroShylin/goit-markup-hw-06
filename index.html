@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +15,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header-box">
       <div class="container">
         <div class="header-items">
-          <nav class="menu">
+          <nav class="menu-box">
             <a class="menu_logo" href="./index.html"
               >Web<span class="menu_logo__decor">Studio</span></a
             >
@@ -58,40 +59,41 @@
       <!--  Section 1 -  Banner  -->
 
       <section class="banner">
-        <h1 class="banner__title">
-          Effective Solutions<br />for Your Business
-        </h1>
-        <button type="button" class="btn__ordr">Order Service</button>
+        <div class="container banner-conteiner">
+          <h1 class="banner__title">Effective Solutions for Your Business</h1>
+          <button type="button" class="btn__ordr">Order Service</button>
+        </div>
       </section>
 
       <!-- Section 2 - Our advantages -->
-      <div class="container">
-        <section class="advantages-section">
-          <h2 class="advantages_title">Our advantages</h2>
+
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our advantages</h2>
 
           <ul class="advantages-box">
-            <li>
+            <li class="advantages-list">
               <h3 class="advantages__item">Strategy</h3>
               <p class="advantages__text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="advantages-list">
               <h3 class="advantages__item">Punctuality</h3>
               <p class="advantages__text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="advantages-list">
               <h3 class="advantages__item">Diligence</h3>
               <p class="advantages__text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="advantages-list">
               <h3 class="advantages__item">Technologies</h3>
               <p class="advantages__text">
                 Design practice focused on digital experiences. We bring forth a
@@ -99,8 +101,9 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- Section 3 - Team -->
 
       <section class="team-section">
