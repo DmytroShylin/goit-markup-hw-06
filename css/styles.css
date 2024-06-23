@@ -52,10 +52,6 @@ header .container {
   justify-content: space-between;
 }
 
-.header-items {
-  display: flex;
-}
-
 .menu-box {
   display: flex;
   align-items: center;
