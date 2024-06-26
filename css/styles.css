@@ -129,6 +129,16 @@ header .container {
 .banner {
   background: #2e2f42;
   padding: 188px 0;
+  background-color: #2a2a2a;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(/images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .banner-conteiner {
@@ -172,6 +182,25 @@ header .container {
 }
 
 /* Our advantages - section 2 */
+
+.advantages-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.adv-icon {
+  width: 64px;
+  height: 64px;
+  stroke-width: 2px;
+  fill: none;
+}
 
 .advantages-section {
   padding: 120px 0;
@@ -270,6 +299,36 @@ header .container {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 8px;
+  list-style: none;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: #404bbf;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* Section 4 - Portfolio */
