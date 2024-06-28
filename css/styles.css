@@ -160,6 +160,7 @@ header .container {
   background-size: cover;
   background-position: 50% 50%;
   background-size: cover;
+  max-width: 1440px;
 }
 
 .banner-conteiner {
@@ -167,7 +168,6 @@ header .container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 1440px;
 }
 
 .banner__title {
@@ -486,6 +486,14 @@ header .container {
   margin-bottom: 16px;
 }
 
-.social-icon-footer {
+.social-icons-footer {
   gap: 16px;
+}
+
+.social-icon-footer:hover {
+  background-color: #31d0aa;
+}
+
+.social-icon-footer:focus {
+  background-color: #31d0aa;
 }
