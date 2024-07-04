@@ -165,8 +165,8 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
+  /* opacity: 0;
+  pointer-events: none; */
   transition: opacity 250ms ease-in-out;
 }
 
@@ -329,11 +329,8 @@ header .container {
   background-color: #404bbf;
 }
 
-.modal-accept-box {
+.modal-accept-conteiner {
   margin-bottom: 24px;
-}
-
-.accepd-descript {
   display: flex;
   align-items: center;
   gap: 8px;
