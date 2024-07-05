@@ -674,9 +674,9 @@ header .container {
   margin-bottom: 16px;
 }
 
-/* .modal-form {
+.modal-form {
   position: relative;
-} */
+}
 
 .modal-label-input {
   margin-bottom: 8px;
