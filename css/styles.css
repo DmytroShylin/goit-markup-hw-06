@@ -571,94 +571,7 @@ header .container {
   background-color: #404bbf;
 }
 
-.subscribe-icon {
-  margin-left: 16px;
-}
-
 /* MODAL */
-
-.banner-modal-overlay {
-  background-color: rgba(46, 47, 66, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.banner-modal-overlay.is-open {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.banner-modal {
-  background-color: #fcfcfc;
-  border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  padding: 72px 24px 24px 24px;
-}
-
-.modal-content-conteiner {
-  max-width: 360px;
-  margin: 0 auto;
-}
-
-.modal-btn-box {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-}
-
-.modal-btn-close {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-close-icon {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-btn-close:hover,
-.modal-btn-close:focus {
-  background-color: #404bbf;
-  border: none;
-}
-
-.modal-btn-close:hover .modal-close-icon,
-.modal-btn-close:focus .modal-close-icon {
-  fill: #ffffff;
-}
 
 .backdrop {
   position: fixed;
@@ -669,6 +582,15 @@ header .container {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .modal {
@@ -816,6 +738,7 @@ header .container {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .modal-checkbox:checked + .modal-checkbox-label .modal-checkbox-custom {
