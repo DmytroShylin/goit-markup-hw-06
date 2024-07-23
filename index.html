@@ -16,14 +16,20 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header class="header-box">
       <div class="container">
-        <nav class="menu-box">
+        <div class="header-mobile">
           <a class="menu_logo" href="./index.html"
             >Web<span class="menu_logo__decor">Studio</span></a
           >
+          <svg class="header-menu-mobile" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-2"></use>
+          </svg>
+        </div>
+        <!-- <nav class="menu-box">
           <ul class="menu-items">
             <li>
               <a href="./index.html" class="menu__item menu__item-active"
@@ -51,7 +57,7 @@
               >
             </li>
           </ul>
-        </address>
+        </address> -->
       </div>
     </header>
 
@@ -129,6 +135,7 @@
       <section class="team-section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
+
           <ul class="team__box">
             <li class="team__item">
               <img
@@ -226,28 +233,28 @@
                 <p class="team-text">Marketing</p>
                 <ul class="social-icons">
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -268,28 +275,28 @@
                 <p class="team-text">UI Designer</p>
                 <ul class="social-icons">
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="social-icon"
+                    <a href="" class="social-icon"
                       ><svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -437,55 +444,55 @@
     <!-- /* Footer */ -->
 
     <footer class="footer-cont">
-      <div class="container footer-box-cont">
-        <div class="footer-about">
-          <a class="footer_logo"
-            >Web<span class="footer_logo__decor">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-social">
-          <p class="footer-social-title">Social media</p>
+      <div class="container">
+        <div class="footer-box-cont">
+          <div class="footer-about">
+            <a class="footer_logo"
+              >Web<span class="footer_logo__decor">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social">
+            <p class="footer-social-title">Social media</p>
 
-          <ul class="social-icons-footer">
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-footer"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-footer"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-footer"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-icon-item">
-              <a href="#" class="social-icon-footer"
-                ><svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+            <ul class="social-icons-footer">
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-footer"
+                  ><svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-footer"
+                  ><svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-footer"
+                  ><svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-icon-item">
+                <a href="#" class="social-icon-footer"
+                  ><svg class="icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="subscribe-conteiner">
-          <p class="subscribe-title">Subscribe</p>
-          <form class="subscribe-form">
-            <label class="subscribe-lable">
+          <div class="subscribe-conteiner">
+            <p class="subscribe-title">Subscribe</p>
+            <form class="subscribe-form">
               <input
                 class="subscribe-input"
                 type="email"
@@ -493,14 +500,15 @@
                 id="mail"
                 placeholder="E-mail"
               />
-            </label>
-            <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -584,12 +592,14 @@
             />
             <label class="modal-checkbox-label" for="user-privacy">
               <span class="modal-checkbox-custom">
-                <svg class="modal-checkbox-icon" width="10" height="8">
+                <svg class="modal-checkbox-icon" width="10" height="10">
                   <use href="./images/icons.svg#icon-Checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-privacy-link" href="#">Privacy Policy</a>
+              <div>
+                I accept the terms and conditions of the
+                <a class="modal-privacy-link" href="#">Privacy Policy</a>
+              </div>
             </label>
           </div>
 
