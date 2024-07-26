@@ -1047,6 +1047,7 @@ img {
   .footer-box-cont {
     justify-content: start;
     gap: 72px 24px;
+    padding: 96px 0 96px 88px;
   }
 
   .footer_logo {
@@ -1182,6 +1183,7 @@ img {
   .footer-box-cont {
     flex-wrap: nowrap;
     gap: 0;
+    padding: 96px 0 96px 0px;
   }
 
   .footer-about {
